@@ -1,0 +1,32 @@
+<scroll-view class="wrap">
+  <view class="search">
+    <input placeholder="{{searchValue}}" bindinput="bindInput" />
+    <view class="search-btn" bindtap='bindSearch'>
+      <image src="../../images/search.png"></image>
+    </view>
+  </view>
+    <view class="job-list">
+      <block wx:for="{{jobList}}" wx:key="{{item}}">
+        <view class="item" bindtap="moveTodetail" data-index="{{item.index}}">
+          <view class="logo">
+            <image src="{{item.picUrl}}"></image>
+          </view>
+          <view class="desc">
+            <text class="title">{{item.title}}</text>
+            <text class="company">{{item.company}}</text>
+            <text class="claim">
+            <text class="city">{{item.city}}</text>
+            <text class="year"> {{item.year}}</text>
+            <text class="edu"> {{item.edu}}</text>
+            </text>
+          </view>
+          <view class="salary">
+            <text>{{item.salary}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  <view  wx:if="{{jobList.length === 0}}" class="no-data">
+    <text>程序员偷懒没给数据。。。</text>
+  </view>
+</scroll-view>

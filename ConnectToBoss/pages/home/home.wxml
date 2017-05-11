@@ -1,0 +1,89 @@
+<scroll-view>
+  <view class="container">
+    <view class="header">
+      <text class="header__text-title">你与好工作其实只差一次聊天</text>
+      <text class="header__text-subtitle">Boss直聘</text>
+      <view class="search">
+        <input type="search" class="search-text" placeholder="搜索职位/公司" bindinput="bindInput" />
+        <view class="search-btn" bindtap='bindSearch'>
+          <text class="search-btn-text">搜索</text>
+        </view>
+      </view>
+    </view>
+    <view class="content">
+      <view class="icon">
+        <image src="../../images/technology.png"></image>
+        <text class="text">技术</text>
+      </view>
+      <view class="item-list">
+        <text class="item" bindtap='SearchKeyWord' data-type="Java">Java</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="PHP">PHP</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="Web前端">Web前端</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="数据挖掘">数据挖掘</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="C++">C++</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="Python">Python</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="Android">Android</text>
+        <text class="item" bindtap='SearchKeyWord' data-type="iOS">iOS</text>
+      </view>
+      <view class="icon">
+        <image src="../../images/product.png"></image>
+        <text class="text">产品</text>
+      </view>
+      <view class="item-list">
+        <text class="item">产品经理</text>
+        <text class="item">产品助理</text>
+        <text class="item">网页产品经理</text>
+        <text class="item">数据产品经理</text>
+      </view>
+      <view class="icon">
+        <image src="../../images/designer.png"></image>
+        <text class="text">设计</text>
+      </view>
+      <view class="item-list">
+        <text class="item">UI设计师</text>
+        <text class="item">平面设计师</text>
+        <text class="item">交互设计师</text>
+        <text class="item">设计总监</text>
+      </view>
+      <view class="icon">
+        <image src="../../images/market.png"></image>
+        <text class="text">市场</text>
+      </view>
+      <view class="item-list">
+        <text class="item">市场营销</text>
+        <text class="item">商务渠道</text>
+        <text class="item">品牌公关</text>
+        <text class="item">数据挖掘</text>
+        <text class="item">策划经理</text>
+        <text class="item">活动策划</text>
+        <text class="item">SEO</text>
+        <text class="item">SEM</text>
+      </view>
+      <view class="icon">
+        <image src="../../images/operate.png"></image>
+        <text class="text">运营</text>
+      </view>
+      <view class="item-list">
+        <text class="item">用户运营</text>
+        <text class="item">产品运营</text>
+        <text class="item">新媒体运营</text>
+        <text class="item">运营总监</text>
+        <text class="item">商家运营</text>
+        <text class="item">电商运营</text>
+        <text class="item">编辑</text>
+        <text class="item">客服经理</text>
+      </view>
+      <view class="icon">
+        <image src="../../images/senior.png"></image>
+        <text class="text">职能/高级管理</text>
+      </view>
+      <view class="item-list--last">
+        <text class="item">人力资源</text>
+        <text class="item">行政</text>
+        <text class="item">财务</text>
+        <text class="item">会计</text>
+        <text class="item">CHRBP</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

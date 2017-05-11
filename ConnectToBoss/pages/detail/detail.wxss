@@ -1,0 +1,155 @@
+/* pages/detail/detail.wxss */
+.container {
+  height: 100%;
+}
+.detail__header .header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200rpx;
+  background-color: #62D5C8;
+  padding: 40rpx;
+}
+.detail__header .header__title .one,
+.detail__header .header__title .two {
+  display: flex;
+  justify-content: space-between;
+}
+.detail__header .header__title .one {
+  font-size: 48rpx;
+  /*font-weight: 700;*/
+  color: #fff;
+}
+.detail__header .header__title .two text {
+  font-size: 28rpx;
+  color: #fff;
+}
+.detail__header .header__title .three {
+  font-size: 28rpx;
+  color: #fff;
+}
+.detail__header .header__title .three text {
+  margin-right: 40rpx;
+  border: 1px solid #fff;
+  border-radius: 24rpx;
+  padding: 10rpx 20rpx;
+}
+.header__contact {
+  background-color: #EEFBF9;
+  display: flex;
+}
+.header__contact .contact-left {
+  flex: 7;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.header__contact .contact__btn {
+  flex: 3;
+  color: #fff;
+  font-size: 32rpx;
+  background-color: #62D5C8;
+  padding: 10rpx 20rpx;
+  margin-top: 56rpx;
+  margin-right: 15rpx;
+  width: 200rpx;
+  height: 50rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 50rpx;
+  /*font-weight: 700;*/
+}
+.header__contact .contact-left image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.header__contact .contact-left .contact__text {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20rpx;
+}
+.header__contact .contact-left .contact__text text {
+  display: block;
+  margin-bottom: 20rpx;
+}
+.header__contact .contact-left .contact__text .contact__text-name {
+  font-size: 44rpx;
+  /*font-weight: 700;*/
+}
+.header__contact .contact-left .contact__text .contact__text-bio {
+  font-size: 28rpx;
+  color: #A2A6B2;
+}
+.detail__content {
+  padding: 40rpx;
+}
+.detail__content .content__desc {
+  margin-bottom: 24rpx;
+}
+.detail__content .content__team {
+  margin-bottom: 24rpx;
+}
+.detail__content .content__team .content-tags {
+  margin: 24rpx 0;
+}
+.detail__content .content__team .content-tags text {
+  color: #62D5C8;
+  border: 1px solid #62D5C8;
+  padding: 10rpx 20rpx;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  /*font-weight: 700;*/
+  margin: 20rpx 20rpx 20rpx 0;
+}
+.detail__content .content__address {
+  margin-bottom: 20rpx;
+}
+#map{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.detail__content .content-title {
+  font-size: 40rpx;
+  /*font-weight: 700;*/
+  padding-top: 20rpx;
+}
+.detail__content .divider {
+  width: 20rpx;
+  height: 0;
+  border-bottom: 1px solid #62D5C8;
+  padding-top: 20rpx;
+}
+.detail__content .content-body {
+  font-size: 36rpx;
+  /*font-weight: 700;*/
+  color: #666;
+  padding-top: 20rpx;
+}
+.detail__footer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40rpx;
+  background-color: #EEFBF9;
+}
+.detail__footer image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 8rpx;
+}
+.detail__footer .footer-right {
+  padding-left: 40rpx;
+}
+.detail__footer .footer-right .footer_title {
+  font-size: 44rpx;
+  /*font-weight: 700;*/
+  padding-bottom: 16rpx;
+}
+.detail__footer .footer-right .footer_company {
+  font-size: 28rpx;
+  /*font-weight: 700;*/
+  padding-bottom: 16rpx;
+}
+.detail__footer .footer-right .footer_info text {
+  font-size: 28rpx; 
+  color: #666;
+}

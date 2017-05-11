@@ -1,0 +1,72 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="container">
+  <view class="detail__header">
+    <view class="header__title">
+      <view class="one">
+        <text>{{detail.title}}</text>
+        <text>{{detail.salary}}</text>
+      </view>
+      <view class="two">
+        <view>
+          <text>{{detail.city}} |</text>
+          <text> {{detail.year}} |</text>
+          <text> {{detail.edu}}</text>
+        </view>
+        <view>
+          <text>发布于{{detail.time}}</text>
+        </view>
+      </view>
+      <view class="three">
+        <text>{{detail.type.one}}</text>
+        <text>{{detail.type.two}}</text>
+        <text>{{detail.type.three}}</text>
+      </view>
+    </view>
+    <view class="header__contact">
+      <view class="contact-left">
+        <image src="{{detail.contactPicUrl}}"></image>
+        <view class="contact__text">
+          <text class="contact__text-name">{{detail.contactName}}</text>
+          <text class="contact__text-bio">{{detail.contactText}}</text>
+        </view>
+      </view>
+      <view class="contact__btn">立即沟通</view>
+    </view>
+  </view>
+  <view class="detail__content">
+    <view class="content__desc">
+      <view class="content-title">职位描述</view>
+      <view class="divider"></view>
+      <view class="content-body">{{detail.desc}}</view>
+    </view>
+    <view class="content__team">
+      <view class="content-title">团队介绍</view>
+      <view class="divider"></view>
+      <view class="content-body">{{detail.teamInfo}}</view>
+      <view class="content-tags">
+        <text>{{detail.tags.one}}</text>
+        <text>{{detail.tags.two}}</text>
+        <text>{{detail.tags.three}}</text>
+      </view>
+    </view>
+    <view class="content__address">
+      <view class="content-title">工作地址</view>
+      <view class="divider"></view>
+      <view class="content-map">
+        <map id="map" latitude="{{detail.map.latitude}}" longitude="{{detail.map.longitude}}" show-location></map>
+      </view>
+    </view>
+  </view>
+  <view class="detail__footer">
+    <image src="{{detail.picUrl}}"></image>
+    <view class="footer-right">
+      <view class="footer_title">{{detail.companyName}}</view>
+      <view class="footer_company">{{detail.company}}</view>
+      <view class="footer_info">
+        <text class="footer-type">{{detail.companyType}} |</text>
+        <text class="footer-listed"> {{detail.companyListed}} |</text>
+        <text class="footer-person"> {{detail.companyPerson}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

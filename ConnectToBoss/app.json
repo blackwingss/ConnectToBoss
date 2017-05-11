@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#53cac3",
+    "navigationBarTitleText": "Boss直聘",
+    "navigationBarTextStyle": "#fff"
+  }
+}
